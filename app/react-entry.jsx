@@ -5,5 +5,5 @@ import { render as renderDOM } from 'react-dom';
 // Components
 import Container from './components/Container';
 
-var entry = 'react-entry';
+const entry = 'react-entry';
 renderDOM(<Container />, document.getElementById(entry));

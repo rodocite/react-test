@@ -2,12 +2,19 @@ module.exports = {
   entry: ['./app/react-entry.jsx'],
 
   output: {
-    path: './public',
-    publicPath: '/',
+    path: __dirname + '/public',
     filename: 'bundle.js',
   },
 
   module: {
+    preLoaders: [
+      {
+        test: [/\.js$/, /\.jsx$/],
+        loaders: ['eslint-loader'],
+        include: __dirname + '/app',
+      },
+    ],
+
     loaders: [
       {
         test: [/\.js$/, /\.jsx$/],

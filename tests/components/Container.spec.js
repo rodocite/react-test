@@ -20,7 +20,6 @@ describe('Container', () => {
 
   it('should output Hello World', () => {
     const text = output.props.children.includes('Hello World');
-    console.log(text);
     expect(text).toEqual(true);
   });
 });

@@ -4,8 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": "./test.node.js | mocha './tests/**/*.spec.js' --compilers js:babel-register",
-    "mocha": "mocha './tests/**/*.spec.js' --compilers js:babel-register",
+    "test": "mocha './tests/**/*.spec.js' --compilers js:babel-register",
     "hot": "webpack-dev-server --hot --inline"
   },
   "author": "",

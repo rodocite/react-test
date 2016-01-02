@@ -2,9 +2,10 @@
   "name": "react-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "test": "mocha './src/**/*.spec.js' --compilers js:babel-register",
+    "test": "./test.node.js | mocha './tests/**/*.spec.js' --compilers js:babel-register",
+    "mocha": "mocha './tests/**/*.spec.js' --compilers js:babel-register",
     "hot": "webpack-dev-server --hot --inline"
   },
   "author": "",

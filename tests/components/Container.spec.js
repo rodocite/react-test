@@ -19,6 +19,7 @@ describe('Container', () => {
   });
 
   it('should output Hello World', () => {
-    expect(output.props.children).toEqual('Hello World');
+    const text = output.props.children.includes('Hello World');
+    expect(text).toEqual(true);
   });
 });

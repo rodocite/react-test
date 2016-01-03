@@ -4,7 +4,10 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": "mocha './tests/**/*.spec.js' --compilers js:babel-register",
+    "lint": "eslint . --ext .js --ext .jsx",
+    "mocha": "mocha './tests/**/*.spec.js' --compilers js:babel-register",
+    "test": "npm run lint --silent && npm run mocha",
+    "build": "webpack",
     "hot": "webpack-dev-server --hot --inline"
   },
   "author": "",

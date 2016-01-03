@@ -30,6 +30,6 @@ module.exports = {
   },
 
   devServer: {
-    contentBase: './public',
+    contentBase: __dirname + '/public',
   },
 };

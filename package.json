@@ -5,8 +5,8 @@
   "main": "",
   "scripts": {
     "lint": "eslint . --ext .js --ext .jsx",
-    "mocha": "mocha './tests/**/*.spec.js' --compilers js:babel-register",
-    "test": "npm run lint --silent && npm run mocha",
+    "tape": "tape -r babel-register ./tests/**/*.spec.js",
+    "test": "npm run lint --silent && npm run tape --silent",
     "build": "webpack",
     "hot": "webpack-dev-server --hot --inline"
   },
@@ -24,9 +24,8 @@
     "eslint-config-airbnb": "^2.1.1",
     "eslint-loader": "^1.1.1",
     "eslint-plugin-react": "^3.13.1",
-    "expect": "^1.13.4",
-    "mocha": "^2.3.4",
     "react-addons-test-utils": "^0.14.5",
+    "tape": "^4.4.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
